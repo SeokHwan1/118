@@ -37,7 +37,7 @@ public class 회원가입2 extends AppCompatActivity{
 
     public void MenuClick(View V)
     {
-        Intent intent3 = new Intent(this, 메뉴판관리.class);
+        Intent intent3 = new Intent(this, 메뉴추가_회원가입.class);
         startActivity(intent3);
 
         finish();

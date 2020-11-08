@@ -25,6 +25,7 @@
         <activity android:name=".손님부르기"/>
         <activity android:name="공지사항"/>
         <activity android:name="메뉴수정및등록"/>
+        <activity android:name=".메뉴추가_회원가입"/>
     </application>
 
 

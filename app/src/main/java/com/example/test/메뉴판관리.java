@@ -13,7 +13,6 @@ public class 메뉴판관리 extends AppCompatActivity {
     {
         super.onCreate(SaveInstaceState);
         setContentView(R.layout.manage_menu);
-
     }
 
     public void CompletClick(View C)

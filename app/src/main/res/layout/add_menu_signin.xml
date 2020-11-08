@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="802dp"
+        android:layout_height="1282dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginBottom="60dp"
+        android:text="메뉴 입력"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/multiAutoCompleteTextView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView5"
+        android:layout_width="678dp"
+        android:layout_height="471dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="200dp"
+        android:completionHint="a"
+        android:hint="메뉴 입력"
+        app:layout_constraintBottom_toTopOf="@+id/CompleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ReturnButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:onClick="ReturnClick"
+        android:text="뒤로가기"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/CompleteButton"
+        app:layout_constraintEnd_toStartOf="@+id/CompleteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CompleteButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/CompleteButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="102dp"
+        android:onClick="CompleteClick"
+        android:text="완료"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ReturnButton"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,22 +7,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="1286dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
-        app:layout_constraintBaseline_toBaselineOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="287dp" />
 
     <Button
         android:id="@+id/ManageStore"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
         android:layout_marginEnd="141dp"
         android:layout_marginRight="141dp"
         android:onClick="ManageStoreClick"
@@ -34,8 +29,8 @@
 
     <Button
         android:id="@+id/Reservation"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
         android:layout_marginStart="145dp"
         android:layout_marginLeft="145dp"
         android:layout_marginTop="477dp"
@@ -52,48 +47,48 @@
 
     <Button
         android:id="@+id/NoticeButton"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="86dp"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="141dp"
         android:layout_marginRight="141dp"
         android:onClick="NoticeClick"
         android:text="공지사항입력"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/MenuChange"
         app:layout_constraintTop_toBottomOf="@+id/ManageStore" />
 
     <Button
         android:id="@+id/MenuChange"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
         android:layout_marginStart="145dp"
         android:layout_marginLeft="145dp"
         android:layout_marginEnd="108dp"
         android:layout_marginRight="108dp"
-        android:layout_marginBottom="196dp"
         android:onClick="MenuChangeClick"
         android:text="메뉴판수정"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/LogOut"
+        app:layout_constraintBottom_toBottomOf="@+id/NoticeButton"
         app:layout_constraintEnd_toStartOf="@+id/NoticeButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reservation" />
+        app:layout_constraintTop_toTopOf="@+id/NoticeButton" />
 
     <Button
         android:id="@+id/LogOut"
-        android:layout_width="203dp"
-        android:layout_height="0dp"
+        android:layout_width="196dp"
+        android:layout_height="120dp"
         android:layout_marginEnd="286dp"
         android:layout_marginRight="286dp"
-        android:layout_marginBottom="93dp"
+        android:layout_marginBottom="50dp"
         android:onClick="LogOutClick"
         android:text="로그아웃"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MenuChange" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
